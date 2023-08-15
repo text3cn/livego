@@ -3,8 +3,7 @@
 </p>
 
 [![Test](https://github.com/gwuhaolin/livego/workflows/Test/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ATest)
-[![Release](https://github.com/gwuhaolin/livego/workflows/Release/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ARelease)
-
+ 
 简单高效的直播服务器：
 - 安装和使用非常简单；
 - 纯 Golang 编写，性能高，跨平台；
