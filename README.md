@@ -3,12 +3,6 @@
 </p>
 
 [![Test](https://github.com/gwuhaolin/livego/workflows/Test/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ATest)
-[![Release](https://github.com/gwuhaolin/livego/workflows/Release/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ARelease)
-
-简单高效的直播服务器：
-- 安装和使用非常简单；
-- 纯 Golang 编写，性能高，跨平台；
-- 支持常用的传输协议、文件格式、编码格式；
 
 #### 支持的传输协议
 - RTMP
@@ -26,14 +20,13 @@
 - MP3
 
 ## 安装
-直接下载编译好的[二进制文件](https://github.com/gwuhaolin/livego/releases)后，在命令行中执行。
+#### 从源码编译
+1. 下载源码 `git clone https://github.com/gwuhaolin/livego.git`
+2. 去 livego 目录中 执行 `go build`
 
 #### 从 Docker 启动
 执行`docker run -p 1935:1935 -p 7001:7001 -p 7002:7002 -p 8090:8090 -d gwuhaolin/livego`启动
 
-#### 从源码编译
-1. 下载源码 `git clone https://github.com/gwuhaolin/livego.git`
-2. 去 livego 目录中 执行 `go build`
 
 ## 使用
 1. 启动服务：执行 `livego` 二进制文件启动 livego 服务；
