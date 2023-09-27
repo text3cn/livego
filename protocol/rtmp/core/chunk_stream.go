@@ -51,7 +51,7 @@ func (chunkStream *ChunkStream) writeHeader(w *ReadWriter) error {
 		w.WriteUintBE(h, 1)
 		w.WriteUintLE(chunkStream.CSID-64, 2)
 	}
-	//Chunk Message Header
+	//Chunk Content Header
 	ts := chunkStream.Timestamp
 	if chunkStream.Format == 3 {
 		goto END
