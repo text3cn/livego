@@ -1,6 +1,7 @@
 
 <img src='./logo.png' width='200px' height='80px'/>
- 
+
+docker run -p 1935:1935 -p 7001:7001 -p 7002:7002 -p 8090:8090 -d gwuhaolin/livego
 
 [![Test](https://github.com/gwuhaolin/livego/workflows/Test/badge.svg)](https://github.com/gwuhaolin/livego/actions?query=workflow%3ATest)
  
@@ -55,9 +56,6 @@ Usage of ./livego:
 # room 参数为自定义房间号
 http://localhost:2010/control/get?room=room1
 http://localhost:2010/control/get?room=room2
-
-http://18.138.58.242:2010/control/get?room=room1
-http://18.138.58.242:2010/control/get?room=room2
 ```
 2. 推流，例如使用 ffmpeg 推流
 ```bash

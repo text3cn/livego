@@ -9,7 +9,7 @@ DOCKER_ACC ?= gwuhaolin
 DOCKER_REPO ?= livego
 TAG ?= $(shell git describe --tags --abbrev=0 2>/dev/null)
 
-FFMPEG = /Users/t3/workspace/projects/t3imvideo/newframe/kit/ffmpeg/ffmpeg
+FFMPEG = /Users/t3/workspace/projects/gtiv/newframe/kit/ffmpeg/ffmpeg
 
 default: all
 
@@ -42,4 +42,4 @@ push2:
 	$(FFMPEG) -re -stream_loop -1 -i videos/demo4m.mp4 -c copy -f flv rtmp://localhost:2011/live/L17LTlsVqMNTZyLKMIFSD2x28MlgPJ0SDZVHnHJPxMKi0tWx、
 
 push3:
-	$(FFMPEG) -re -stream_loop -1 -i videos/japan.flv -c copy -f flv rtmp://18.138.58.242:2011/live/NUxhZjX5vD1WNYbkBBesIoEtkMR0uFWbUAiVpuXf3dq9xN3I
+	$(FFMPEG) -re -stream_loop -1 -i videos/japan.flv -c copy -f flv rtmp://192.168.1.200:2011/live/NUxhZjX5vD1WNYbkBBesIoEtkMR0uFWbUAiVpuXf3dq9xN3I
